@@ -1,0 +1,60 @@
+#cube{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cube .cube-block{
+    margin-top: 64px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cube img{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+
+#cube label{
+    font-family: 'Ambidexter';
+    font-size: 7vh;
+}
+
+#cube .table{
+    width: 90%;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#cube .table .colomn-img{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cube .table .colomn-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cube p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+    margin: 10px;
+    height: 70px;
+}

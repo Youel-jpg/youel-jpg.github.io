@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Apersu';
+}
+
+body{
+    /* background-color: #28201F; */
+    background-color: #FFF0EF;
+    color: #28201F;
+}
+
+/* цвета ___________________________
+
+          Основной
+коричневый          #28201F
+
+            ЛИС
+оранжевый           #FF7819
+темно-оранжевый     #FF663E
+
+            КИС
+белый               #FFF0EF
+бежевый             #F0D1CD
+
+    Подушечки & сердечко
+светло-розовый      #FF7C76
+темно-розовый       #B63F36
+
+_________________________________
+*/
+
+@font-face {
+    font-family: Ambidexter;
+    src: url(/Fonts/ambidexter.otf);
+}
+
+@font-face {
+    font-family: Apersu;
+    src: url(/Fonts/apercu-light-pro.woff2);
+}
