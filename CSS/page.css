@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Apersu';
+    font-family: 'Pixel';
 }
 
 body{
@@ -29,6 +29,17 @@ body{
 темно-розовый       #B63F36
 
 _________________________________
+
+        Из пантона
+
+темный коричневый   #382b1b
+молочный шоколад    #774d34
+светлый коричневый  #9e724f
+бежевый             #d1c5b9
+серый светлый       #e1e7dd
+
+
+_________________________________
 */
 
 @font-face {
@@ -39,4 +50,9 @@ _________________________________
 @font-face {
     font-family: Apersu;
     src: url(/Fonts/apercu-light-pro.woff2);
+}
+
+@font-face {
+    font-family: Pixel;
+    src: url(/Fonts/pixeleum-48.ttf);
 }

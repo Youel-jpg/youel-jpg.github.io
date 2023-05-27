@@ -1,0 +1,86 @@
+#queue{
+    background: #F0D1CD;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#queue label{
+    margin-top: 67px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Ambidexter';
+    font-size: 7vh;
+}
+
+#queue div {
+    /* margin-top: 67px; */
+    /* margin-bottom: 67px; */
+    width: 100%;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#queue div div{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+#queue .number {
+    font-family: 'Ambidexter';
+    text-align: right;
+    width: 40%;
+    font-size: 1.8em;
+    /* background: #9e724f; */
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: 0;
+}
+
+#queue .text{
+    width: 40%;
+    padding: 10px;
+    /* background: #fff; */
+    font-size: 1.2em;
+    font-family: 'Pixel';
+    margin-top: 0;
+}
+
+#queue p{
+display: none;
+margin: 0 10%;
+}
+
+#queue button {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#queue button::before{
+    content: '\A6F7';
+    font-size: 3em;
+    color: #28201F;;
+}
+
+#queue button:hover{
+    border: solid 2px #28201F;
+}
+
+#stage1:active #action1{ display: block !important;}

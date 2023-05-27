@@ -3,6 +3,9 @@
     background: #28201F;
     color: #FFF0EF;
 
+    background: #FFF0EF;
+    color: #28201F;
+
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -10,7 +13,7 @@
 }
 
 #intro .bg {
-    background-image: linear-gradient(rgba(27, 20, 20, 0.7), rgba(190, 145, 145, 0.8)), url(/Pictures/back_card.png);
+    /* background-image: linear-gradient(rgba(27, 20, 20, 0.7), rgba(190, 145, 145, 0.8)), url(/Pictures/back_card.png); */
     background-size: auto 100vh;
     background-position: center;
     width: 100%;
@@ -26,7 +29,7 @@
 #intro .logo {
     font-family: 'Ambidexter';
     font-size: 7vh !important;
-    color: #FFF0EF;
+    /* color: #FFF0EF; */
 }
 
 #intro .bg div {
@@ -39,7 +42,7 @@
 
 
   color: #28201F;
-  background: #f0d1cdba;
+  /* background: #f0d1cdba; */
   padding: 40px 20px;
   border: 0;
   border-radius: 40px;

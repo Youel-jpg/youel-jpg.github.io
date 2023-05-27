@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/CSS/page.css">
     <link rel="stylesheet" href="/CSS/menu.css">
     <link rel="stylesheet" href="/CSS/intro.css">
+    <link rel="stylesheet" href="/CSS/queue.css">
     <link rel="stylesheet" href="/CSS/cube.css">
     <link rel="stylesheet" href="/CSS/rules.css">
     <link rel="stylesheet" href="/CSS/footer.css">
@@ -19,9 +20,9 @@
         <a href="#" class="logo">Лис & Кис</a>
         <ul class="menue">
             <div class="dropdown">
-                <li><a id="instruction" href="#">☰</a></li>
+                <li><a id="menue">&#9776;</a></li>
                 <div class="dropdown-content">
-                    <li><a href="#">Порядок ходов</a></li>
+                    <li><a href="#queue">Порядок ходов</a></li>
                     <li><a href="#">Правила</a></li>
                     <li><a href="#cube">Кубик</a></li>
                     <li><a href="#">Карты</a></li>
@@ -44,8 +45,49 @@
         </div>
     </section>
 
-    <section id="rules">
-        Порядок ходов
+    <section id="queue">
+        <div>
+            <label>Порядок ходов</label>
+            <div>
+                <label class="number">Фаза №1:</label><label class="text">Бросай кубик</label> <button onclick="
+                    if(document.getElementById('action1').style.display=='block') {
+                        this.style.transform = 'rotate(0deg)';
+                        document.getElementById('action1').style.display='none';
+                    }
+                    else {
+                        this.style.transform = 'rotate(180deg)';
+                        document.getElementById('action1').style.display='block'; 
+                    }
+                    "></button>
+            </div>
+            <p id="action1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, error quidem dolores optio voluptatem ipsum consequatur possimus ad at hic eius non. At hic omnis nostrum accusamus modi, laborum est?</p>
+            <div>
+                <label class="number">Фаза №2:</label><label class="text">Прячь карточку в кармашек</label> <button onclick="
+                if(document.getElementById('action2').style.display=='block') {
+                    this.style.transform = 'rotate(0deg)';
+                    document.getElementById('action2').style.display='none';
+                }
+                else {
+                    this.style.transform = 'rotate(180deg)';
+                    document.getElementById('action2').style.display='block'; 
+                }
+                "></button>
+            </div>
+            <p id="action2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum omnis atque, deleniti rem adipisci ratione. Delectus mollitia doloremque recusandae debitis, vitae sequi? Doloribus, labore. Itaque, temporibus consequuntur? Nihil, veniam quia?</p>
+            <div>
+                <label class="number">Фаза №3:</label><label class="text">Начинай дискуссию</label> <button onclick="
+                if(document.getElementById('action3').style.display=='block') {
+                    this.style.transform = 'rotate(0deg)';
+                    document.getElementById('action3').style.display='none';
+                }
+                else {
+                    this.style.transform = 'rotate(180deg)';
+                    document.getElementById('action3').style.display='block'; 
+                }
+                "></button>
+            </div>
+            <p id="action3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quia quod corporis aut! Nostrum rerum sed assumenda accusamus ab ea magnam eveniet mollitia, beatae similique unde ad voluptatibus magni suscipit!</p>
+        </div>
     </section>
 
     <section id="cube">
