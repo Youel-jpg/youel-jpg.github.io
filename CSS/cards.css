@@ -1,0 +1,181 @@
+#cards{
+    width: 100%;
+}
+
+#cards label{
+    font-family: 'Ambidexter';
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.cards{
+    padding-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.slider {
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  
+  
+  /* scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory; */
+ 
+}
+
+  .slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  .slides::-webkit-scrollbar-thumb {
+    background: #28201F;
+    border-radius: 10px;
+  }
+
+  .slides::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    /* position: relative; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+
+    z-index: 0;
+  }
+
+  .slides > div:target {
+    /* transform: scale(0.8); */
+  }
+  
+
+  #cards img {
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+.slider > a {
+    display: inline-flex;
+    width: 1rem;
+    height: 1rem;
+    background: #28201F;
+    color: #eee;
+    text-decoration: none !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* margin: 0 0 0.5rem 0; */
+    /* position: relative; */
+
+  }
+  .slider > a:active {
+    top: 1px;
+  }
+  .slider > a:focus {
+    background: #28201F;
+  }
+  
+  /* Don't need button navigation */
+  /* @supports (scroll-snap-type) {
+    .slider > a {
+      display: none;
+    }
+} */
+
+
+.points{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.points div{
+  display: inline-block;
+	margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  /* width: 90%; */
+}
+
+.points div label{
+  margin-bottom: 10px !important;
+}
+
+.cards .number label{
+  width: 2.5rem;
+}
+
+.points label{
+  font-family: 'Pixel' !important;
+  font-size: 1em !important;
+}
+
+
+.points div input[type="radio"]{
+  display: none;
+}
+
+.points div label
+{
+  display: inline-block;
+  height: 1.5rem;
+  width: 4rem;
+  padding: 0 5px;
+  text-decoration: none;
+  color: #28201F;
+  background: none;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+}
+
+.points div input[type="radio"]:checked + label{
+  color: #eee;
+  background: #28201F;
+  transition: 1s;
+}
+
+.points div label:hover{
+  color: #eee;
+  background: #9e724f;
+}

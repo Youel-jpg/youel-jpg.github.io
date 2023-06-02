@@ -7,9 +7,13 @@
 
 body{
     /* background-color: #28201F; */
-    background-color: #FFF0EF;
+    /* background-color: #FFF0EF; */
+    background-color: #d1c5b9;
     color: #28201F;
+    height: 100%;
+    /* overflow: hidden; */
 }
+
 
 /* цвета ___________________________
 
@@ -37,8 +41,6 @@ _________________________________
 светлый коричневый  #9e724f
 бежевый             #d1c5b9
 серый светлый       #e1e7dd
-
-
 _________________________________
 */
 

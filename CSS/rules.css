@@ -1,3 +1,48 @@
-#rules{
-    background: #FFF0EF;
+#rules-two-players, 
+#rules-one-player{
+    background: #d1c5b9;
+}
+
+.rules{
+    padding-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules label, 
+.rules label{
+    font-family: 'Ambidexter';
+    font-size: 2.5em;
+}
+
+.rules-text{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+    margin-bottom: 70px;
+    color: #9e724f;
+}
+
+.rules-text .title{
+    width: 90%;
+    display: flex;
+    font-family: 'Ambidexter';
+    font-size: 1.8em;
+    text-align: left;
+    letter-spacing: 0.07em;
+
+    color: #28201F;
+}
+
+.rules-text p{
+    width: 90%;
+    font-size: 0.9em;
 }
