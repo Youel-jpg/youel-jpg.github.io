@@ -2,5 +2,57 @@
     /* background:  #28201F;
     color: #FFF0EF; */
     font-size: 0.9em;
+    width: 100%;
     /* height: 200px; */
+}
+
+
+#about label{
+    font-family: 'Ambidexter';
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+#about .title{
+    width: 80%;
+    display: flex;
+    font-family: 'Ambidexter';
+    font-size: 1.8em;
+    text-align: left;
+    letter-spacing: 0.07em;
+
+    color: #28201F;
+}
+
+#about .about-content{
+    padding-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+#about p{
+    width: 80%;
+    letter-spacing: 0.1em;
+    color: #9e724f;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#about p.thanks{
+    width: 80%;
+    letter-spacing: 0.1em;
+    color: #28201F;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 0;
 }

@@ -142,7 +142,14 @@
 }
 
 .cards .number label{
-  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 2rem;
+
+  width: 2rem;
+  font-family: 'Ambidexter' !important;
 }
 
 .points label{
@@ -172,7 +179,7 @@
 .points div input[type="radio"]:checked + label{
   color: #eee;
   background: #28201F;
-  transition: 1s;
+  transition: 2s;
 }
 
 .points div label:hover{
