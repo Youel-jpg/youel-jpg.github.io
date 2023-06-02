@@ -1,0 +1,66 @@
+#random{
+    width: 100%;
+}
+
+#random div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#random div div{
+    width: 90%;
+}
+
+#random label{
+    margin-top: 80px;
+    font-family: 'Ambidexter';
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+#random p{
+    margin-bottom: 40px;
+    font-size: 0.8em;
+    color: #FFF0EF;
+
+    padding: 6px 20px;
+    border-radius: 20px;
+
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+
+    background: #9e724f;
+}
+
+#random button{
+
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: 0;
+
+    /* background: #9e724f; */
+    background: #28201F;
+    color: #FFF0EF;
+    text-transform: uppercase;
+
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+
+    padding: 10px;
+    cursor: pointer;
+}
+
+#random button:active{
+    /* background: #9e724f; */
+    /* transition: 0.5s; */
+    top: 3px;
+}

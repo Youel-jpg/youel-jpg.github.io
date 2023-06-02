@@ -69,7 +69,7 @@ font-size: 0.9em;
     margin-left: 20px;
     cursor: pointer;
     background-color: transparent;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 0;
 
     display: flex;
@@ -81,11 +81,13 @@ font-size: 0.9em;
 #queue button::before{
     content: '\A6F7';
     font-size: 3em;
-    color: #28201F;;
+    color: #28201F;
 }
 
 #queue button:hover{
-    border: solid 2px #28201F;
+    /* border: solid 2px #9e724f; */
+    background: #cfae8e;
+    /* transition: 1s; */
 }
 
 #stage1:active #action1{ display: block !important;}

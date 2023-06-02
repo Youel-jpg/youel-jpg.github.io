@@ -41,14 +41,16 @@ menu ul li a{
     display: flex;
     text-decoration: none;
     padding: 6px 6px;
-    color: #FFF0EF;
+    background: #FFF0EF;
+    color: #28201F;
     border-radius: 20px;
 }
 
 menu ul li a:hover,
 menu ul li a.active{
-    background: #FFF0EF;
-    color: #2B363B;
+    background: #9e724f;
+    color: #FFF0EF;
+    transition: 0.2s;
 }
 
 
@@ -76,7 +78,7 @@ menu ul li a.active{
     font-family: 'Pixel';
     /* letter-spacing: 2px; */
     text-transform: uppercase;
-    font-size: small;
+    font-size: 0.75em;
     
     margin-top: 5px;
     color:#FFF0EF;

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/CSS/page.css">
     <link rel="stylesheet" href="/CSS/menu.css">
     <link rel="stylesheet" href="/CSS/intro.css">
+    <link rel="stylesheet" href="/CSS/random.css">
     <link rel="stylesheet" href="/CSS/queue.css">
     <link rel="stylesheet" href="/CSS/cube.css">
     <link rel="stylesheet" href="/CSS/cards.css">
@@ -24,6 +25,7 @@
             <div class="dropdown">
                 <li><a id="menue">&#9776;</a></li>
                 <div class="dropdown-content">
+                    <li><a href="#random">Генератор</a></li>
                     <li><a href="#queue">Порядок ходов</a></li>
                     <li><a href="#cube">Кубик</a></li>
                     <li><a href="#cards">Карточки</a></li>
@@ -45,6 +47,17 @@
                 <label class="logo">~ МИЯУ ♡</label>
              </div>
         </div>
+    </section>
+
+    <section id="random">
+        <div>
+            <label>Кто начинает ?</label>
+            <div>
+                <p id="generated-value">↓   Жми на кнопку   ↓</p>
+                <button type="button" id="btn">Жмак</button>
+            </div>
+        </div>
+        <script src="/JS/random.js"></script>
     </section>
 
     <section id="queue">
@@ -437,7 +450,7 @@
         <div class="footer-content">
             <div class="words-of-game">
                 <div>АВТОРСКАЯ ИГРА</div>
-                <div style="color: #9e724f;">Единственное в своем экземпляре и предназначенное лишь для одной цели средство</div>
+                <div style="color: #9e724f; text-align: justify; padding-right: 25px;">Единственное в своем экземпляре и предназначенное лишь для одной цели средство</div>
             </div>
             <div class="contacts">
                 <div>СОЗДАНО И РАЗРАБОТАНО</div>
