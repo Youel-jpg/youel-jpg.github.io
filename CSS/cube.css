@@ -1,8 +1,7 @@
 #cube{
-
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -24,11 +23,12 @@
 #cube label{
     font-family: 'Ambidexter';
     font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 #cube .table{
     width: 90%;
-    height: 85vh;
+    /* height: 85vh; */
     display: flex;
     flex-direction: row;
 }

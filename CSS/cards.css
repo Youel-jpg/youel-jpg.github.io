@@ -50,7 +50,7 @@
   }
 
   .slides::-webkit-scrollbar-track {
-    background: transparent;
+    background: transparent !important;
   }
 
   .slides > div {

@@ -10,11 +10,11 @@
 }
 
 #queue label{
-    margin-top: 67px;
+    margin-top: 80px;
     width: 100%;
     text-align: center;
     font-family: 'Ambidexter';
-    font-size: 5vh;
+    font-size: 2.5em;
 }
 
 #queue div {
@@ -87,7 +87,7 @@ font-size: 0.9em;
 #queue button:hover{
     /* border: solid 2px #9e724f; */
     background: #cfae8e;
-    /* transition: 1s; */
+    transition: 0.8s;
 }
 
 #stage1:active #action1{ display: block !important;}

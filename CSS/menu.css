@@ -27,8 +27,9 @@ menu .logo{
 }
 
 menu ul{
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between !important;
     align-items: center;
 }
 
@@ -113,4 +114,36 @@ menu ul li a.active{
     text-align: center !important;
     padding-bottom: 11px;
 }
+
+menu img{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    filter: invert();
+}
+
+#theme {
+    background: none; 
+    cursor: pointer;
+}
+
+#theme:hover{
+    /* background: #9e724f;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 2s; */
+}
+
+/* menu img{
+    max-width: 100%;
+    animation: fade 3s linear;
+    animation-delay: 2.5s;
+  }
+  @keyframes fade {
+    0% { opacity: 1 }
+    50% { opacity: 0 }
+    100% { opacity: 1 }
+  } */
+
 

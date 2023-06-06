@@ -28,7 +28,7 @@
 
 #intro .logo {
     font-family: 'Ambidexter';
-    font-size: 2.5em !important;
+    font-size: 2em !important;
     /* color: #FFF0EF; */
 }
 
@@ -41,7 +41,7 @@
   justify-content: center;
 
 
-  color: #28201F;
+  /* color: #28201F; */
   /* background: #f0d1cdba; */
   padding: 40px 20px;
   border: 0;
@@ -53,6 +53,6 @@
 }
 
 #intro .bg div label{
-    font-size: 2vh;
+    font-size: 0.8em;
  
 }
