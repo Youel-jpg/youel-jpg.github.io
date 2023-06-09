@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="color-scheme" content="only light">
+
     <title>ЛИС & КИС</title>
 
     <link rel="stylesheet" href="/CSS/page.css">
     <link rel="stylesheet" href="/CSS/menu.css">
     <link rel="stylesheet" href="/CSS/intro.css">
+    <link rel="stylesheet" href="/CSS/random.css">
     <link rel="stylesheet" href="/CSS/queue.css">
     <link rel="stylesheet" href="/CSS/cube.css">
+    <link rel="stylesheet" href="/CSS/cards.css">
     <link rel="stylesheet" href="/CSS/rules.css">
+    <link rel="stylesheet" href="/CSS/about.css">
     <link rel="stylesheet" href="/CSS/footer.css">
 
 </head>
@@ -20,17 +26,20 @@
         <a href="#" class="logo">Лис & Кис</a>
         <ul class="menue">
             <div class="dropdown">
-                <li><a id="menue">&#9776;</a></li>
+                <li><a id="menue"> ∷∷ </a></li>
                 <div class="dropdown-content">
+                    <li><a href="#random">Генератор</a></li>
                     <li><a href="#queue">Порядок ходов</a></li>
-                    <li><a href="#">Правила</a></li>
                     <li><a href="#cube">Кубик</a></li>
-                    <li><a href="#">Карты</a></li>
-                    <li><a href="#">Играю один</a></li>
-                    <li><a href="#">Об игре</a></li>
+                    <li><a href="#cards">Карточки</a></li>
+                    <li><a href="#rules-two-players">Играем вдвоем</a></li>
+                    <li><a href="#rules-one-player">Играю один</a></li>
+                    <li><a href="#about">Об игре</a></li>
                 </div> 
             </div>
+            <!-- <li><a id="theme"><img id="theme-light" src="/Pictures/theme-light.png"></a></li> -->
         </ul>
+        <script src="/JS/theme.js"></script>
     </menu>
 
     <section id="intro">
@@ -38,11 +47,24 @@
             <div>
                 <label>Рада приветствовать тебя на странице игры <br><br><label class="logo">Лис & Кис !</label></label>
                 <br><br>
-                <label>Искренне надеюсь, что Лис не станет красть карточки из колоды!</label>
+                <label>Искренне надеюсь, что Лис не станет красть карточки из моей колоды!</label>
                 <br><br>
-                <label class="logo">~ МИЯУ ♡</label>
+                <label class="logo">мияу</label>
+                <br>
+                <label style="font-size: large;">(=ↀωↀ=)</label>
              </div>
         </div>
+    </section>
+
+    <section id="random">
+        <div>
+            <label>Кто начинает ?</label>
+            <div>
+                <p id="generated-value">↓   Жми на кнопку   ↓</p>
+                <button type="button" id="btn">Жмак</button>
+            </div>
+        </div>
+        <script src="/JS/random.js"></script>
     </section>
 
     <section id="queue">
@@ -60,7 +82,7 @@
                     }
                     "></button>
             </div>
-            <p id="action1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, error quidem dolores optio voluptatem ipsum consequatur possimus ad at hic eius non. At hic omnis nostrum accusamus modi, laborum est?</p>
+            <p id="action1">Бросай кубик и, в зависимости от того, что на нем выпало, выполняй действие. <br><br> Если действие совершить не возможно или не имеет смысла, то оно может быть пропущено или отложено до конца данного хода, т.е. последней фазы.</p>
             <div>
                 <label class="number">Фаза №2:</label><label class="text">Прячь карточку в кармашек</label> <button onclick="
                 if(document.getElementById('action2').style.display=='block') {
@@ -73,9 +95,9 @@
                 }
                 "></button>
             </div>
-            <p id="action2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum omnis atque, deleniti rem adipisci ratione. Delectus mollitia doloremque recusandae debitis, vitae sequi? Doloribus, labore. Itaque, temporibus consequuntur? Nihil, veniam quia?</p>
+            <p id="action2">Откладывай 1 карточку своего типа в личную колоду.</p>
             <div>
-                <label class="number">Фаза №3:</label><label class="text">Начинай дискуссию</label> <button onclick="
+                <label class="number">Фаза №3:</label><label class="text">Бейся что есть сил</label> <button onclick="
                 if(document.getElementById('action3').style.display=='block') {
                     this.style.transform = 'rotate(0deg)';
                     document.getElementById('action3').style.display='none';
@@ -86,7 +108,7 @@
                 }
                 "></button>
             </div>
-            <p id="action3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quia quod corporis aut! Nostrum rerum sed assumenda accusamus ab ea magnam eveniet mollitia, beatae similique unde ad voluptatibus magni suscipit!</p>
+            <p id="action3">Выкладывай карточку для битвы в открытую на стол, чтобы раззадорить оппонента.</p>
         </div>
     </section>
 
@@ -95,28 +117,357 @@
             <label>Кубик</label>
             <div class="table">
                 <div class="colomn-img">
-                    <img src="/Pictures/back_card.png" alt="пикча">
-                    <img src="/Pictures/back_card.png" alt="пикча">
-                    <img src="/Pictures/back_card.png" alt="пикча">
-                    <img src="/Pictures/back_card.png" alt="пикча">
-                    <img src="/Pictures/back_card.png" alt="пикча">
-                    <img src="/Pictures/back_card.png" alt="пикча">
+                    <img src="/Pictures/cube_1.png" alt="пикча">
+                    <img src="/Pictures/cube_2.png" alt="пикча">
+                    <img src="/Pictures/cube_3.png" alt="пикча">
+                    <img src="/Pictures/cube_4.png" alt="пикча">
+                    <img src="/Pictures/cube_5.png" alt="пикча">
+                    <img src="/Pictures/cube_6.png" alt="пикча">
                 </div>
                 <div class="colomn-text">
-                    <p>АААААА</p>
-                    <p>АААААА</p>
-                    <p>АААААА</p>
-                    <p>АААААА</p>
-                    <p>АААААА</p>
-                    <p>АААААА</p>
+                    <p>Берешь дополнительную карту из колоды со словами: "Дай"</p>
+                    <p>Бережливый откладывает еще одну карту в собственную колоду</p>
+                    <p>Хитрец крадет карту из чужой отложенной колоды</p>
+                    <p>Можешь отложить в свою колоду карту другого типа</p>
+                    <p>Обмен картами чужого типа вслепую</p>
+                    <p>Пропуск хода со словами: "Как же я был неправ..."</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="cards">
+        <div class="cards">
+            <label>Карточки</label>
+
+            <div class="points">
+                <div><input type="radio" name="who" value="fox" id="fox"> <label for="fox">ЛИС</label></div>
+                <div><input type="radio" name="who" value="cat" id="cat"><label for="cat">КИС</label></div>
+                <div><input type="radio" name="who" value ="?" id="?" checked><label for="?">?</label></div>    
+            </div>
+
+            <div class="points number">
+                <div><input type="radio" name="number" value="1" id="points-1" checked> <label for="points-1">1</label></div>
+                <div><input type="radio" name="number" value="2" id="points-2"><label for="points-2">2</label></div>
+                <div><input type="radio" name="number" value ="3" id="points-3"><label for="points-3">3</label></div>    
+                <div><input type="radio" name="number" value="4" id="points-4"> <label for="points-4">4</label></div>
+                <div><input type="radio" name="number" value="5" id="points-5"><label for="points-5">5</label></div>
+                <div><input type="radio" name="number" value ="6" id="points-6"><label for="points-6">6</label></div>    
+            </div>
+
+
+           
+            <div class="slider">
+            
+                <div class="slides" id="bonus" style="display:flex;">
+                    <div id="slide-1">
+                        <img src="/Pictures/card_back.png" alt="задник">
+                    </div>
+                    <div id="slide-2">
+                        <img src="/Pictures/bonus-1.png" alt="I">
+                    </div>
+                    <div id="slide-3">
+                        <img src="/Pictures/bonus-2.png" alt="II">
+                    </div>
+                    <div id="slide-4">
+                        <img src="/Pictures/bonus-3.png" alt="III">
+                    </div>
+                    <div id="slide-5">
+                        <img src="/Pictures/bonus-4.png" alt="IV">
+                    </div>
+                    <div id="slide-6">
+                        <img src="/Pictures/bonus-5.png" alt="V">
+                    </div>
+                    <div id="slide-7">
+                        <img src="/Pictures/bonus-6.png" alt="VI">
+                    </div>
+                </div>
+<!-- **************************************************************** ЛИСА **************************************************************** -->
+
+                <div class="slides" id="fox-1-point" style="display:none;">
+                    <div id="slide-1">
+                        <img src="/Pictures/fox-1-point-1.PNG" alt="№1">
+                    </div>
+                    <div id="slide-2">
+                        <img src="/Pictures/fox-1-point-2.PNG" alt="№2">
+                    </div>
+                    <div id="slide-3">
+                        <img src="/Pictures/fox-1-point-3.PNG" alt="№3">
+                    </div>
+                    <div id="slide-4">
+                        <img src="/Pictures/fox-1-point-4.PNG" alt="№4">
+                    </div>
+                    <div id="slide-5">
+                        <img src="/Pictures/fox-1-point-5.PNG" alt="№5">
+                    </div>
+                </div>
+
+                <div class="slides" id="fox-2-point" style="display:none;">
+                    <div id="slide-1">
+                        <img src="/Pictures/fox-2-point-1.PNG" alt="№1">
+                    </div>
+                    <div id="slide-2">
+                        <img src="/Pictures/fox-2-point-2.PNG" alt="№2">
+                    </div>
+                    <div id="slide-3">
+                        <img src="/Pictures/fox-2-point-3.PNG" alt="№3">
+                    </div>
+                    <div id="slide-4">
+                        <img src="/Pictures/fox-2-point-4.PNG" alt="№4">
+                    </div>
+                </div>
+
+                <div class="slides" id="fox-3-point" style="display:none;">
+                    <div id="slide-1">
+                        <img src="/Pictures/fox-3-point-1.PNG" alt="№1">
+                    </div>
+                    <div id="slide-2">
+                        <img src="/Pictures/fox-3-point-2.PNG" alt="№2">
+                    </div>
+                    <div id="slide-3">
+                        <img src="/Pictures/fox-3-point-3.PNG" alt="№3">
+                    </div>
+                </div>
+
+                <div class="slides" id="fox-4-point" style="display:none;">
+                    <div id="slide-1">
+                        <img src="/Pictures/fox-4-point-1.PNG" alt="№1">
+                    </div>
+                    <div id="slide-2">
+                        <img src="/Pictures/fox-4-point-2.PNG" alt="№2">
+                    </div>
+                    <div id="slide-3">
+                        <img src="/Pictures/fox-4-point-3.PNG" alt="№3">
+                    </div>
+                </div>
+
+                <div class="slides" id="fox-5-point" style="display:none;">
+                    <div id="slide-1">
+                        <img src="/Pictures/fox-5-point-1.PNG">
+                    </div>
+                    <div id="slide-2">
+                        <img src="/Pictures/fox-5-point-2.PNG">
+                    </div>
+                </div>
+
+                <div class="slides" id="fox-6-point" style="display:none;">
+                    <div id="slide-1">
+                        <img src="/Pictures/fox-6-point-1.PNG" alt="&">
+                    </div>
+                </div>
+
+                <!-- **************************************************************** КОШКА **************************************************************** -->
+
+                <div class="slides" id="cat-1-point" style="display:none;">
+                    <div id="slide-1">
+                        <img src="/Pictures/cat-1-point-1.PNG" alt="#1">
+                    </div>
+                    <div id="slide-2">
+                        <img src="/Pictures/cat-1-point-2.PNG" alt="#2">
+                    </div>
+                    <div id="slide-3">
+                        <img src="/Pictures/cat-1-point-3.PNG" alt="#3">
+                    </div>
+                    <div id="slide-4">
+                        <img src="/Pictures/cat-1-point-4.PNG" alt="#4">
+                    </div>
+                    <div id="slide-5">
+                        <img src="/Pictures/cat-1-point-5.PNG" alt="#5">
+                    </div>
+                </div>
+
+                <div class="slides" id="cat-2-point" style="display:none;">
+                    <div id="slide-1">
+                        <img src="/Pictures/cat-2-point-1.PNG" alt="#1">
+                    </div>
+                    <div id="slide-2">
+                        <img src="/Pictures/cat-2-point-2.PNG" alt="#2">
+                    </div>
+                    <div id="slide-3">
+                        <img src="/Pictures/cat-2-point-3.PNG" alt="#3">
+                    </div>
+                    <div id="slide-4">
+                        <img src="/Pictures/cat-2-point-4.PNG" alt="#4">
+                    </div>
+                </div>
+
+                <div class="slides" id="cat-3-point" style="display:none;">
+                    <div id="slide-1">
+                        <img src="/Pictures/cat-3-point-1.PNG" alt="#1">
+                    </div>
+                    <div id="slide-2">
+                        <img src="/Pictures/cat-3-point-2.PNG" alt="#2">
+                    </div>
+                    <div id="slide-3">
+                        <img src="/Pictures/cat-3-point-3.PNG" alt="#1">
+                    </div>
+                </div>
+
+                <div class="slides" id="cat-4-point" style="display:none;">
+                    <div id="slide-1">
+                        <img src="/Pictures/cat-4-point-1.PNG" alt="#1">
+                    </div>
+                    <div id="slide-2">
+                        <img src="/Pictures/cat-4-point-2.PNG" alt="#2">
+                    </div>
+                    <div id="slide-3">
+                        <img src="/Pictures/cat-4-point-3.PNG" alt="#3">
+                    </div>
+                </div>
+
+                <div class="slides" id="cat-5-point" style="display:none;">
+                    <div id="slide-1">
+                        <img src="/Pictures/cat-5-point-1.PNG" alt="#1">
+                    </div>
+                    <div id="slide-2">
+                        <img src="/Pictures/cat-5-point-2.PNG" alt="#2">
+                    </div>
+                </div>
+
+                <div class="slides" id="cat-6-point" style="display:none;">
+                    <div id="slide-1">
+                        <img src="/Pictures/cat-6-point-1.PNG" alt="&">
+                    </div>
+                </div>
+<!-- 
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+                <a href="#slide-5"></a> -->
+
+            </div>
+        </div>
+
+        <script src="/JS/points_menu.js"></script>
+
+    </section>
+
+    <section id="rules-two-players">
+        <div class="rules">
+            <label>PvP</label>
+            <div class="rules-text">
+                <br>
+                    <div class="title">Начало игры</div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore tenetur voluptates itaque! Veritatis recusandae, at laborum fuga eligendi natus cupiditate explicabo cumque, autem nemo, sapiente repudiandae. Laudantium minus illo sapiente.
+                    </p>
+                <br>
+                    <div class="title">Порядок ходов</div>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat obcaecati impedit necessitatibus? Dicta laboriosam recusandae mollitia saepe nihil repudiandae consectetur voluptatibus nesciunt porro sunt. Eligendi quisquam alias impedit dolorum sint!
+                    </p>
+                <br>
+                    <div class="title">Цель игры</div>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat obcaecati impedit necessitatibus? Dicta laboriosam recusandae mollitia saepe nihil repudiandae consectetur voluptatibus nesciunt porro sunt. Eligendi quisquam alias impedit dolorum sint!
+                    </p>
+                <br>
+                    <div class="title">Конец игры</div>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat obcaecati impedit necessitatibus? Dicta laboriosam recusandae mollitia saepe nihil repudiandae consectetur voluptatibus nesciunt porro sunt. Eligendi quisquam alias impedit dolorum sint!
+                    </p>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="rules-one-player">
+        <div class="rules">
+            <label>Одинокий одиночка</label>
+            <div class="rules-text">
+                <br>
+                    <div class="title">Начало игры</div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore tenetur voluptates itaque! Veritatis recusandae, at laborum fuga eligendi natus cupiditate explicabo cumque, autem nemo, sapiente repudiandae. Laudantium minus illo sapiente.
+                    </p>
+                <br>
+                    <div class="title">Порядок ходов</div>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat obcaecati impedit necessitatibus? Dicta laboriosam recusandae mollitia saepe nihil repudiandae consectetur voluptatibus nesciunt porro sunt. Eligendi quisquam alias impedit dolorum sint!
+                    </p>
+                <br>
+                    <div class="title">Цель игры</div>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat obcaecati impedit necessitatibus? Dicta laboriosam recusandae mollitia saepe nihil repudiandae consectetur voluptatibus nesciunt porro sunt. Eligendi quisquam alias impedit dolorum sint!
+                    </p>
+                <br>
+                    <div class="title">Конец игры</div>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat obcaecati impedit necessitatibus? Dicta laboriosam recusandae mollitia saepe nihil repudiandae consectetur voluptatibus nesciunt porro sunt. Eligendi quisquam alias impedit dolorum sint!
+                    </p>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+
+        <div class="about-content">        
+            <label>Благодарности</label>
+            <p class="thanks">Отдельную благодарность выражаю ЭЛЕ за помощь и проверку геймплея и АНДРЕЮ за оперативное участие в проекте !</p>
+            
+            
+            <label style="margin-top: 60px;">Об игре</label>
+
+            <div class="title">Идея</div>
+            <p>
+                Захотелось мне подзапариться и сделать что-то памятное, но такое чтобы просто на полке не пылилось.
+                <br><br>
+                Сначала выбор пал на игру "бродилка", но она выглядела такой беспонтовой, да и опять там фотки приплетались, хотелось чего-то поуникальней.
+                <br><br>
+                На глаза попались карточные игры, сложенные в кучу, а я проходила теорию игр...
+                <br><br>
+                ! Спойлер – данные знания были отложены на самую дальнюю полку в чулане.
+            </p>
+
+            <div class="title">Карточки</div>
+            <p>
+                Наверное, ты уже догадался, что на 36 игровых карт мне не хватало личных идей и ты немножечко мне подсобил в проекте...
+            </p>
+
+            <div class="title">Кубик</div>
+            <p>
+                Тут ваш верный слуга старался подвязать действия к персонажам с максимальной отдачей, поэтому присутствуют и обязательные формулировки фраз при выпадении определенных картинок.
+            </p>
+
+            <div class="title">Сайт</div>
+            <p>
+                Это вообще отдельная тема... но я научилась куче новых интересных штук. Любимая фича – секция карточек.
+            </p>
+
+            
+            
+            <label style="margin-top: 60px;">Послесловие</label>
+            <p class="thanks">
+                Что бы такого сказать под конец
+                <br><br> 
+                • • •
+                <br><br> 
+                Спасибо, что мы с тобой остаемся вместе, что бы не случилось !
+                <br><br> 
+                ♥♥♥♥♥
+            </p>
+
+        </div>
+        
+    </section>
+
     <footer>
-        оаоара
+        <div class="footer-content">
+            <div class="words-of-game">
+                <div>АВТОРСКАЯ ИГРА</div>
+                <div style="color: #9e724f; text-align: justify; padding-right: 25px;">Единственное в своем экземпляре и предназначенное лишь для одной цели средство</div>
+            </div>
+            <div class="contacts">
+                <div>СОЗДАНО И РАЗРАБОТАНО</div>
+          
+                <div>
+                    <a href="https://vk.com/youel" id="vk"  target="_blank" ><img src="/Pictures/vk.png" alt="ВК"></a>      
+                    <label for="vk" style="color: #9e724f;">Юль</label>
+                </div>
+            </div>
+        </div>
     </footer>
-    
 </body>
 </html>

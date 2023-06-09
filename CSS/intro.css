@@ -1,10 +1,10 @@
 #intro {
     /* margin-top: 64px; */
-    background: #28201F;
+    /* background: #28201F;
     color: #FFF0EF;
 
     background: #FFF0EF;
-    color: #28201F;
+    color: #28201F; */
 
     height: 100vh;
     display: flex;
@@ -28,7 +28,7 @@
 
 #intro .logo {
     font-family: 'Ambidexter';
-    font-size: 7vh !important;
+    font-size: 2em !important;
     /* color: #FFF0EF; */
 }
 
@@ -41,18 +41,18 @@
   justify-content: center;
 
 
-  color: #28201F;
+  /* color: #28201F; */
   /* background: #f0d1cdba; */
   padding: 40px 20px;
   border: 0;
   border-radius: 40px;
 
-  /* -webkit-text-fill-color: transparent; */
-  /* -webkit-text-stroke-width: 1px;
+  /* -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #28201F; */
 }
 
 #intro .bg div label{
-    font-size: 3vh;
+    font-size: 0.8em;
  
 }
