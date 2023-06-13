@@ -35,7 +35,7 @@
     width: 90%;
     display: flex;
     font-family: 'Ambidexter';
-    font-size: 1.8em;
+    font-size: 1.5em;
     text-align: left;
     letter-spacing: 0.07em;
 
@@ -44,5 +44,10 @@
 
 .rules-text p{
     width: 90%;
-    font-size: 0.9em;
+    font-size: 0.6em;
+}
+
+.rules img{
+    width: 90%;
+    margin: 20px 0;
 }

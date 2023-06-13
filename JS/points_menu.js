@@ -11,7 +11,6 @@ console.log(number);
 
 changeCards(who, number);
 
-
 function changeCards($who, $number){
 
     var card_block = document.getElementsByClassName('slides');
