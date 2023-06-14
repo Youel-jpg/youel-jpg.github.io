@@ -45,7 +45,7 @@
     align-items: center;
     margin-bottom: 20px;
 
-    font-size: 1em;
+    font-size: 0.75rem;
 }
 
 #about p.thanks{
@@ -57,5 +57,5 @@
     text-align: center;
     align-items: center;
     margin-bottom: 0;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
 }

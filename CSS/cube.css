@@ -43,7 +43,7 @@
 
 #cube .table .colomn-text{
     width: 70%;
-    font-size: 0.7em !important;
+    font-size: 0.75rem !important;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -44,7 +44,24 @@
 
 .rules-text p{
     width: 90%;
-    font-size: 0.6em;
+    font-size: 0.75rem;
+    line-height: 2em;
+}
+
+.rules-text p a{
+    position: relative;
+    top: 0;
+    background: #9e724f;
+    color: #d1c5b9;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    /* font-weight: 700; */
+    letter-spacing: 0.1em;
+}
+
+.rules-text p a:active{
+    top:3px;
 }
 
 .rules img{
