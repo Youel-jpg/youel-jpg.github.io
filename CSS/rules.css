@@ -1,7 +1,3 @@
-#rules-two-players, 
-#rules-one-player{
-    /* background: #d1c5b9; */
-}
 
 .rules{
     padding-top: 80px;
@@ -67,4 +63,37 @@
 .rules img{
     width: 90%;
     margin: 20px 0;
+}
+
+table{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+table tr{
+    width: 90%;
+}
+
+table tr td{
+    font-size: 0.8rem;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+table tr td.name{
+    font-size: 1rem;
+    color: #d1c5b9;
+    background: #9e724f;
+    font-family: 'Ambidexter';
+}
+
+table tr td.what{
+    font-size: 0.8rem;
+    text-align: left;
+    font-family: 'Pixel';
 }
