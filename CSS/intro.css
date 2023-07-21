@@ -32,25 +32,29 @@
     /* color: #FFF0EF; */
 }
 
-#intro .bg div {
-  width: 80%;
-  height: 80%;
+#intro .bg .text-card {
+  right: 1rem;
+  margin: 3rem;
+  /* padding: 2rem 5rem; */
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
 
+ /* display: none; */
 
   /* color: #28201F; */
-  /* background: #f0d1cdba; */
+  /* background: #e1e7dd; */
   padding: 40px 20px;
-  border: 0;
-  border-radius: 40px;
+  /* border: solid 2px #774d34; */
+  border-radius: 10px;
+  z-index: 0;
 
   /* -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #28201F; */
 }
+
 
 #intro .bg div label{
     font-size: 0.8em;
