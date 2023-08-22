@@ -27,3 +27,30 @@ function returnRandElement(){
 }
 
 document.getElementById('btn').onclick = returnRandElement;
+
+
+
+//------ для картинок
+
+var arr_pics = [
+    'sleep',
+    'run',
+    'sleep',
+    'sleep',
+    'sleep',
+    'sleep',
+    'sleep',
+    'sleep',
+    'sleep',
+    'sleep',
+    'sleep',
+    'sleep',
+    'sleep',
+    'sleep',
+    ];
+
+let value = 'sleep'
+value = arrayRandElement(arr_pics)
+
+if (value=='sleep') document.getElementById('anim-pic').src='/Pictures/animation_sleep.GIF'
+    else document.getElementById('anim-pic').src='/Pictures/animation_run.GIF'

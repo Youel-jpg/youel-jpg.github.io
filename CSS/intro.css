@@ -22,7 +22,7 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -32,27 +32,56 @@
     /* color: #FFF0EF; */
 }
 
-#intro .bg div {
-  width: 80%;
-  height: 80%;
+#intro .bg .text-card {
+  /* right: 1rem; */
+  position: relative;
+  top: 100px;
+  margin: 3rem 2rem;
+  /* padding: 2rem 5rem; */
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
 
+ /* display: none; */
 
   /* color: #28201F; */
-  /* background: #f0d1cdba; */
-  padding: 40px 20px;
-  border: 0;
-  border-radius: 40px;
+  /* background: #e1e7dd; */
+  /* padding: 40px 20px; */
+  /* border: solid 2px #774d34; */
+  border-radius: 10px;
+  z-index: 1;
 
   /* -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #28201F; */
 }
 
+
 #intro .bg div label{
     font-size: 0.8em;
  
+}
+
+#intro .bg .img{
+    position: relative;
+    top: -50px;
+    width: 100%;
+    margin-bottom: 1.5rem;
+ 
+    /* padding-bottom: 5em; */
+}
+
+/* #intro .bg .img div{
+    position: relative;
+    top: -5px;
+    width: 100%;
+    height: 10rem;
+    background: linear-gradient(#c09e71, #d1c5b9); 
+    z-index: -2;
+} */
+
+#intro .bg .img img{
+    width: 100%;
+    z-index: -1;
 }
