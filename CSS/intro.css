@@ -65,9 +65,10 @@
 
 #intro .bg .img{
     position: relative;
-    /* top: 5px; */
+    top: -50px;
     width: 100%;
     margin-bottom: 1.5rem;
+ 
     /* padding-bottom: 5em; */
 }
 
